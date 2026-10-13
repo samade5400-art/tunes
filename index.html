@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tunes</title><meta name="theme-color" content="#0e0f13">
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="icon" href="icons/icon-192.png"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><h1 id="home">🎵 Tunes</h1><input id="q" type="search" placeholder="Search songs & artists…"></header>
+<nav id="tabs"><button data-v="home" class="on">Browse</button><button data-v="fav">♥ Favorites</button></nav>
+<main id="view"></main>
+<div id="ytwrap" class="idle"><div id="yt"></div></div>
+<footer id="bar" hidden>
+ <div class="now"><img id="art" alt=""><div><b id="nt"></b><small id="na"></small></div><button id="fv" title="Favorite">♡</button></div>
+ <div class="ctl"><button id="shuf" title="Shuffle">🔀</button><button id="prev">⏮</button><button id="pp" class="big">▶</button><button id="next">⏭</button><button id="vid" title="Show video">📺</button></div>
+ <input id="seek" type="range" min="0" max="1000" value="0">
+</footer>
+<script src="app.js"></script><script src="https://www.youtube.com/iframe_api"></script>
+</body></html>
